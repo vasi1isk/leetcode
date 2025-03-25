@@ -1,4 +1,4 @@
-package main.java.com.leetcode.task347;
+package main.java.com.task347;
 
 import java.util.Arrays;
 import java.util.HashMap;
