@@ -23,7 +23,7 @@ public class MyHashMap<K, V> {
     }
 
     private int hash(K key) {
-        return (key == null) ? 0 : key.hashCode() & (INITIAL_CAPACITY - 1);
+        return (key == null) ? 0 : key.hashCode() & (INITIAL_CAPACITY - 1); // & Much better than %
     }
 
     public void put(K key, V value) {
