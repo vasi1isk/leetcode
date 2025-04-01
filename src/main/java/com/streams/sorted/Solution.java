@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-class SortClass {
+class Solution {
 
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(5, 1, 4, 2, 3);
