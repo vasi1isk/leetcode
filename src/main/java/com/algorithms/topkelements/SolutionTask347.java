@@ -1,4 +1,4 @@
-package main.java.com.task347;
+package main.java.com.algorithms.topkelements;
 
 import java.util.Arrays;
 import java.util.HashMap;
