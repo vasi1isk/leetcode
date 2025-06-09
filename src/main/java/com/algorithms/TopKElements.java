@@ -1,4 +1,4 @@
-package main.java.com.algorithms.topkelements;
+package com.algorithms;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * 347. Top K Frequent Elements
  */
-public class SolutionTask347 {
+public class TopKElements {
     public List<Integer> topKFrequent(List<Integer> nums, int k) {
         Map<Integer, Integer> frequencyMap = new HashMap<>(); // Define map to store frequency of nums
         nums.forEach(num -> frequencyMap.merge(num, 1, Integer::sum)); // fill in this map
@@ -21,7 +21,7 @@ public class SolutionTask347 {
     }
 
     public static void main(String[] args) {
-        SolutionTask347 solutionTask347 = new SolutionTask347();
+        TopKElements solutionTask347 = new TopKElements();
         List<Integer> nums = Arrays.asList(1, 1, 1, 2, 2, 3);
         int k = 2;
         List<Integer> result = solutionTask347.topKFrequent(nums, k);

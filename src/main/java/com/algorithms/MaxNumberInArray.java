@@ -1,6 +1,6 @@
-package main.java.com.algorithms.maxnumberinarray;
+package com.algorithms;
 
-public class Solution {
+public class MaxNumberInArray {
     public int maxNumberInArray(int[] array) {
         int max = array[0];
         for (int i = 1; i < array.length; i++) {
@@ -12,7 +12,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        MaxNumberInArray solution = new MaxNumberInArray();
         int[] array = {1, 2, 3, 4, -5};
         int max = solution.maxNumberInArray(array);
         System.out.println("Max number in array: " + max);

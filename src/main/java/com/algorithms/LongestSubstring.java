@@ -1,9 +1,9 @@
-package main.java.com.algorithms.longestsubstring;
+package com.algorithms;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution {
+public class LongestSubstring {
     public int lengthOfLongestSubstring(String s) {
         Set<Character> set = new HashSet<>();
         int maxLength = 0;
@@ -29,7 +29,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        LongestSubstring solution = new LongestSubstring();
         
         // Тестовые случаи
         System.out.println(solution.lengthOfLongestSubstring("abcabcbb")); // 3
