@@ -20,6 +20,23 @@ public class TopKElements {
                 .collect(Collectors.toList());
     }
 
+    public List<Integer> topKFrequentWithoutStream(List<Integer> nums, int k){
+        Map<Integer, Integer> frequencyMap = new HashMap<>();
+        for (int i = 0; i < nums.size(); i++) {
+            if(!frequencyMap.containsKey(nums.get(i))) {
+                frequencyMap.put(nums.get(i), 1);
+            } else {
+                frequencyMap.put(nums.get(i), frequencyMap.get(nums.get(i)) + 1);
+            }
+        }
+        return frequencyMap.entrySet().stream()
+                .sorted((a, b) -> b.getValue().compareTo(a.getValue())) // Sorting by frequency in desc order
+                .limit(k)
+                .map(Map.Entry::getKey) // transform map saying give me only keys
+                .collect(Collectors.toList());
+    }
+
+
     public static void main(String[] args) {
         TopKElements solutionTask347 = new TopKElements();
         List<Integer> nums = Arrays.asList(1, 1, 1, 2, 2, 3);

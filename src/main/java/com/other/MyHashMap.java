@@ -1,4 +1,4 @@
-package main.java.com.other;
+package com.other;
 
 import java.util.Objects;
 

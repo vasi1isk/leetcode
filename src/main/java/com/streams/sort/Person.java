@@ -1,4 +1,4 @@
-package main.java.com.streams.sort;
+package com.streams.sort;
 
 class Person {
     private String name;

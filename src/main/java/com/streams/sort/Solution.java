@@ -1,4 +1,4 @@
-package main.java.com.streams.sort;
+package com.streams.sort;
 
 import java.util.Arrays;
 import java.util.Comparator;

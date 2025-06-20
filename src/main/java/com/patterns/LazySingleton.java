@@ -1,4 +1,4 @@
-package main.java.com.patterns;
+package com.patterns;
 
 class LazySingleton {
     private static LazySingleton instance;
