@@ -1,4 +1,4 @@
-package com.interviews;
+package com.talks;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +38,7 @@ public class Tricentis {
 		}
 	}
 
+	// Method wihich shoulde be implemented by the candidate
 	private static double computeAverage(int sum, int count) {
 		if (count == 0) {
 			return 0.0; // Avoid division by zero
@@ -45,6 +46,7 @@ public class Tricentis {
 		return (double) sum / count;	
 	}
 
+	// Method wihich shoulde be implemented by the candidate
 	private static int computeSum(List<Integer> numbers) {
 		if (numbers == null || numbers.isEmpty()) {
 			return 0; // Handle empty list case
