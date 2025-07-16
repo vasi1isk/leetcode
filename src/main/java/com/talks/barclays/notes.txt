@@ -1,0 +1,23 @@
+1. Что такое виртуальный тред ?
+2. Паттерн Record из java 17
+3. public class Generic<T> {
+    public int test(T a, T b) {
+        return a.compareTo(b);
+    }
+}
+
+решение:
+public class Generic<T extends Comparable<T>> {
+    public int test(T a, T b) {
+        return a.compareTo(b);
+    }
+}
+4. Реализовать SPA на Spring c двумя методами GET и POST. Пример с сообщениями.
+Message entity:
+Long id;
+String message;
+Long requesterId;
+
+5. Что такое Computable Future и как он работает ?
+
+6. Два thread вызываются в main методе и вызывают один метод в котором определен один цикл for в котором изменяется
