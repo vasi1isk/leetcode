@@ -35,5 +35,8 @@ public class LongestSubstring {
         System.out.println(solution.lengthOfLongestSubstring("abcabcbb")); // 3
         System.out.println(solution.lengthOfLongestSubstring("bbbbb"));    // 1
         System.out.println(solution.lengthOfLongestSubstring("pwwkew"));   // 3
+
+        System.out.println(solution.lengthOfLongestSubstring("pwwkew"));   // 3
+        System.out.println(solution.lengthOfLongestSubstring("pwwkew"));   // 4
     }
 } 
